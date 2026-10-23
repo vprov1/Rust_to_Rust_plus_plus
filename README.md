@@ -1,1 +1,3 @@
 # Rust_to_Rust_plus_plus
+A development plan for the Rust programming language.
+This plan includes a significant increase in functionality and a reduction in size. A translation layer will be added within the code editor, transforming Rust, with all its power, into a faster and lighter language that relies on a single field. According to the compiler, based on my research, this language will exhibit up to 50% higher performance, and even more so, by reducing its size and resource load. I've included the translation dictionary as an example. We will create the translation layer after discussing it with you.
