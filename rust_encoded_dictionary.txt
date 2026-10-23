@@ -1,0 +1,64 @@
+# ++Rust Encoded Dictionary - 53 Keywords Mapping
+# --- Group 1: 26 Native Alphabet Letters (Linguistic/Contextual Mapping) ---
+as ← a
+break ← b
+continue ← c
+dyn ← d
+else ← e
+fn ← f
+false ← f
+loop ← g
+while ← h
+if ← i
+impl ← i
+in ← i
+yield ← j
+crate ← k
+let ← l
+mut ← m
+match ← m
+const ← n
+mod ← o
+pub ← p
+use ← q
+return ← r
+struct ← s
+static ← s
+true ← t
+trait ← t
+unsafe ← u
+virtual ← v
+where ← w
+extern ← x
+typeof ← y
+sizeOf ← z
+unsized ← z
+# --- Group 2: 10 Structural Numbers (0-9 Memory & Architecture) ---
+self ← 0
+Self ← 1
+enum ← 2
+type ← 3
+move ← 4
+ref ← 5
+async ← 6
+await ← 7
+macro_rules! ← 8
+macro ← 9
+# --- Group 3: 17 Analytical Symbols (Reserved & Advanced Features) ---
+_ ← _
+! ← try
+? ← impl Trait
+$ ← abstract
+# ← become
+% ← box
+^ ← do
+& ← final
+* ← override
+- ← priv
+/ ← override
+\ ← become
+~ ← yield
+= ← typeof
+| ← unsized
++ ← macro
+@ ← final
