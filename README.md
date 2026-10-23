@@ -1,24 +1,24 @@
-# Rust++ - A Source Size Reduction Encoding for Rust
+# Rust++ - ترميز لتقليل حجم كود Rust
 
-Rust++ is a conceptual encoding layer designed to reduce the size of Rust source code by replacing long keywords and common language constructs with shorter symbolic mappings.
+Rust++ هو طبقة ترميز Conceptual Encoding مصممة لتقليل حجم كود Rust من خلال استبدال الكلمات الطويلة والمبنيات الشائعة بتعيينات قصيرة ورمزية.
 
-This project is not a performance optimization in the sense of runtime speed or memory reduction. Its purpose is to reduce source-code verbosity and make code more compact, readable in a condensed style, and easier to write in a short-form notation.
+هذا المشروع ليس تحسينًا للأداء بمعنى سرعة التشغيل أو تقليل استخدام الذاكرة. هدفه الأساسي هو تقليل تكرار مصدر الكود وجعله أكثر إحكاما، وأسهل في الكتابة بصيغة مختصرة.
 
-## Objective
+## الهدف
 
-The goal of this project is to provide a compact encoding system for Rust syntax by mapping:
+هدف المشروع هو توفير نظام ترميز مضغوط لبنية Rust عن طريق ربط:
 
-- Rust keywords to shorter symbols
-- common control-flow words to single-character or short forms
-- structural language constructs to compact representations
+- كلمات Rust الأساسية باختصارات أقصر
+- عبارات التحكم الشائعة بأشكال حرفية أو قصيرة
+- البنيات اللغوية الأساسية بتمثيلات مختصرة
 
-This makes the source code shorter without changing the underlying logic of the original Rust code.
+وهذا يجعل الكود أقصر دون تغيير المنطق الأساسي للكود الأصلي.
 
-## Why this project exists
+## لماذا يوجد هذا المشروع
 
-The main purpose is source reduction, not performance gain.
+الغرض الرئيسي هو تقليل حجم الكود المصدر، وليس تحسين الأداء.
 
-For example, a developer may write:
+على سبيل المثال، قد يكتب المطور هذا الكود:
 
 ```rust
 struct User {
@@ -40,7 +40,7 @@ fn login(user: User) -> bool {
 }
 ```
 
-Using the Rust++ mapping, the same logic can be represented in a shorter form:
+باستخدام تعيينات Rust++، يمكن تمثيل نفس المنطق بشكل أقصر:
 
 ```text
 s User {
@@ -62,50 +62,50 @@ f login(user: User) -> bool {
 }
 ```
 
-## What this project is
+## ما هو هذا المشروع
 
-This project is a compact notation layer for Rust syntax.
+هذا المشروع هو طبقة تدوين مضغوط لبنية Rust.
 
-It is not:
-- a new runtime
-- a replacement for Rust compiler optimizations
-- a memory optimization system
-- a performance enhancement approach
+وليس:
+- وقت تشغيل جديد
+- بديلاً لمُحسّنات مترجم Rust
+- نظام تقليل للذاكرة
+- أسلوب لتحسين الأداء
 
-It is:
-- a source-size reduction system
-- a compact representation of Rust structure
-- a conceptual encoding style
-- a lightweight alternative notation for writing Rust in a shorter form
+وهو:
+- نظام لتقليل حجم الكود المصدري
+- تمثيل مضغوط لبنية Rust
+- أسلوب ترميز Conceptual
+- صيغة بديلة خفيفة لكتابة Rust بشكل أقصر
 
-## Benefits
+## الفوائد
 
-- Shorter source files
-- Less repetitive typing
-- Compact representation of common Rust constructs
-- Easier to encode and document language patterns
-- Useful as a conceptual or educational tool
+- ملفات مصدر أقصر
+- كتابة أقل تكرارًا
+- تمثيل مضغوط للبنى الشائعة في Rust
+- أسهل في توثيق وتصميم الأنماط اللغوية
+- مفيد كأداة تعليمية أو تجريبية
 
-## Important note about performance
+## ملاحظة مهمة حول الأداء
 
-This project does not claim to improve runtime performance automatically.
+هذا المشروع لا يدّعي أنه يحسن الأداء في وقت التشغيل تلقائيًا.
 
-Reducing the size of source code may reduce:
-- file size
-- number of characters typed
-- visual verbosity
+تقليل حجم كود المصدر قد يقلل:
+- حجم الملفات
+- عدد الأحرف المكتوبة
+- مستوى التكرار البصري
 
-But it does not necessarily reduce:
-- RAM usage
-- CPU time
-- execution speed
-- compiler runtime cost
+لكن لا يعني بالضرورة أنه يقلل:
+- استخدام RAM
+- زمن المعالجة CPU
+- سرعة التنفيذ
+- تكلفة تشغيل المترجم
 
-The final execution behavior still depends on the actual compiler, optimization level, and underlying language execution model.
+سلوك التنفيذ النهائي لا يزال يعتمد على المترجم الفعلي، ومستوى التحسين، ونموذج التنفيذ الأساسي للغة.
 
-## Example of the idea
+## مثال على الفكرة
 
-The mapping is based on shortening common Rust vocabulary:
+الترميز يعتمد على اختصار المفردات الشائعة في Rust:
 
 | Rust | Rust++ |
 |------|--------|
@@ -119,36 +119,37 @@ The mapping is based on shortening common Rust vocabulary:
 | false | f |
 | return | r |
 
-This allows the code to become much more compact while retaining the same logic.
+وهذا يسمح بأن يصبح الكود أكثر إحكاما مع الحفاظ على نفس المنطق.
 
-## Limitations
+## القيود
 
-- It is not a complete language specification
-- It does not replace standard Rust syntax
-- It is not optimized for runtime performance
-- It is a source-level notation, not a low-level optimization system
+- ليس مواصفة لغة كاملة
+- لا يحل محل صيغة Rust القياسية
+- ليس مُحسّنًا للأداء في وقت التشغيل
+- هو تدوين على مستوى الكود المصدر لا نظام تحسين على مستوى منخفض
 
-## Future direction
+## الاتجاه المستقبلي
 
-This project can evolve in several directions:
+يمكن لهذا المشروع أن ينمو باتجاهات عدة:
 
-- expand the mapping dictionary
-- create formal documentation for each mapping
-- define strict naming and grammar rules
-- build a compiler or translator that converts the compact form into standard Rust
-- use it as a teaching tool for Rust concepts
+- توسيع قاموس التعيين
+- كتابة توثيق رسمي لكل تعيين
+- تعريف قواعد أسماء وقواعد نحوية صارمة
+- بناء مترجم أو أداة تحويل تترجم الشكل المختصر إلى Rust قياسي
+- استخدامه كأداة تعليمية لفهم مفاهيم Rust بوجه مختلف
 
-## Conclusion
+## الخلاصة
 
-Rust++ is best understood as a compact source-code encoding for Rust, designed to reduce source verbosity and simplify the writing of common language constructs.
+Rust++ يُفهم بشكل أفضل كترميز مضغوط لكود Rust، صُمم لتقليل تكرار المصدر وتبسيط كتابة البنى الشائعة.
 
-Its main value is:
-- smaller code size
-- cleaner short-form notation
-- conceptual experimentation
-- developer-friendly compact syntax
+قيمته الأساسية هي:
+- تقليل حجم الكود
+- تدوين مختصر ونظيف
+- التجربة الفكرية
+- صياغة مريحة للمطور
 
-Its main limitation is:
-- it does not directly improve runtime performance or reduce memory usage unless a dedicated translation system adds such optimizations.
+لكن حدوده الأساسية هي:
+- لا يحسن الأداء في وقت التشغيل بشكل مباشر
+- ولا يقلل الاستخدام الحقيقي للذاكرة إلا إذا أضيف نظام ترجمة خاص يقوم بتحسينات إضافية
 
-This project is therefore primarily a code-size reduction and notation experiment, not a performance optimization project.
+لذلك هذا المشروع يركز أساسًا على تقليل حجم الكود وتجربة التدوين، لا على تحسين الأداء.
